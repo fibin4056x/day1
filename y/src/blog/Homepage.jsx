@@ -1,11 +1,13 @@
-import React from 'react'
-import {NavLink } from 'react-router-dom'
-import Navbar from './navbar'
+import React, { useContext } from 'react'
+
+import { Context } from './usecontext'
 
 function Homepage() {
+  const{text}=useContext(Context)
   return (
     <div>
-       hello welcme
+      
+       hello welcme {text}
     </div>
   )
 }
